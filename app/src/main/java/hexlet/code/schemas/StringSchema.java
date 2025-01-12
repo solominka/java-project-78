@@ -3,7 +3,6 @@ package hexlet.code.schemas;
 public class StringSchema extends BaseSchema<String> {
     public StringSchema required() {
         addCheck("required", o -> (o != null && !o.isEmpty()));
-        super.required = true;
         return this;
     }
 
